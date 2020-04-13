@@ -255,7 +255,7 @@ extension MainMenuActionHandler {
   }
 }
 
-// MARK: - Sub
+// MARK: - Subtitles
 
 extension MainMenuActionHandler {
   @objc func menuLoadExternalSub(_ sender: NSMenuItem) {
