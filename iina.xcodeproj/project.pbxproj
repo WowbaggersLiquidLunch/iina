@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -151,6 +151,10 @@
 		84FBF23E1EF06A90003EA491 /* ThumbnailCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FBF23D1EF06A90003EA491 /* ThumbnailCache.swift */; };
 		8F49C36E213EFB7E0076C4F9 /* MiniPlayerWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F49C370213EFB7E0076C4F9 /* MiniPlayerWindowController.xib */; };
 		9E47DAC01E3CFA6D00457420 /* DurationDisplayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E47DABF1E3CFA6D00457420 /* DurationDisplayTextField.swift */; };
+		B4D65E25255F1DF5001D689C /* Just in Frameworks */ = {isa = PBXBuildFile; productRef = B4D65E24255F1DF5001D689C /* Just */; };
+		B4D65E2A255F1F58001D689C /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4D65E29255F1F58001D689C /* PromiseKit */; };
+		B4D65E2F255F1F65001D689C /* Gzip in Frameworks */ = {isa = PBXBuildFile; productRef = B4D65E2E255F1F65001D689C /* Gzip */; };
+		B4D65E34255F1FB0001D689C /* Mustache in Frameworks */ = {isa = PBXBuildFile; productRef = B4D65E33255F1FB0001D689C /* Mustache */; };
 		C789872F1E34EF170005769F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C78987311E34EF170005769F /* InfoPlist.strings */; };
 		E301EFDA21312AB300BC8588 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E301EFD921312AB300BC8588 /* KeychainAccess.swift */; };
 		E322A4F820A8442E00C67D32 /* PlaylistPlaybackProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E322A4F720A8442E00C67D32 /* PlaylistPlaybackProgressView.swift */; };
@@ -1520,6 +1524,7 @@
 				E3B25F6324FF505D0068B9B0 /* libcrypto.1.1.dylib in Frameworks */,
 				E3B25F6924FF505D0068B9B0 /* libavformat.58.dylib in Frameworks */,
 				E3B25F4C24FF505D0068B9B0 /* libvidstab.1.1.dylib in Frameworks */,
+				B4D65E25255F1DF5001D689C /* Just in Frameworks */,
 				E3B25F7524FF505E0068B9B0 /* libavfilter.7.dylib in Frameworks */,
 				E3B25F5E24FF505D0068B9B0 /* libglib-2.0.0.dylib in Frameworks */,
 				E3B25F7224FF505E0068B9B0 /* libffi.7.dylib in Frameworks */,
@@ -1539,12 +1544,15 @@
 				E3B25F4624FF505D0068B9B0 /* libhogweed.6.dylib in Frameworks */,
 				E3B25F6A24FF505D0068B9B0 /* libtesseract.4.dylib in Frameworks */,
 				E3B25F7024FF505E0068B9B0 /* libavutil.56.dylib in Frameworks */,
+				B4D65E2F255F1F65001D689C /* Gzip in Frameworks */,
 				E3B25F6524FF505D0068B9B0 /* libwebp.7.dylib in Frameworks */,
 				E3B25F6E24FF505D0068B9B0 /* liblzma.5.dylib in Frameworks */,
 				E3B25F4E24FF505D0068B9B0 /* liblcms2.2.dylib in Frameworks */,
 				E3B25F6F24FF505E0068B9B0 /* libjpeg.9.dylib in Frameworks */,
+				B4D65E2A255F1F58001D689C /* PromiseKit in Frameworks */,
 				E3B25F5F24FF505D0068B9B0 /* librubberband.2.dylib in Frameworks */,
 				E3B25F7124FF505E0068B9B0 /* libzstd.1.dylib in Frameworks */,
+				B4D65E34255F1FB0001D689C /* Mustache in Frameworks */,
 				E3B25F6C24FF505D0068B9B0 /* libfontconfig.1.dylib in Frameworks */,
 				E3B25F5A24FF505D0068B9B0 /* libavdevice.58.dylib in Frameworks */,
 				E3B25F5924FF505D0068B9B0 /* libwebpmux.3.dylib in Frameworks */,
@@ -2250,6 +2258,12 @@
 				49542985216C34950058F680 /* PBXTargetDependency */,
 			);
 			name = iina;
+			packageProductDependencies = (
+				B4D65E24255F1DF5001D689C /* Just */,
+				B4D65E29255F1F58001D689C /* PromiseKit */,
+				B4D65E2E255F1F65001D689C /* Gzip */,
+				B4D65E33255F1FB0001D689C /* Mustache */,
+			);
 			productName = mpvx;
 			productReference = 84EB1ED61D2F51D3004FA5A1 /* IINA.app */;
 			productType = "com.apple.product-type.application";
@@ -2301,7 +2315,7 @@
 				};
 			};
 			buildConfigurationList = 84EB1ED11D2F51D3004FA5A1 /* Build configuration list for PBXProject "iina" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2329,6 +2343,12 @@
 				ca,
 			);
 			mainGroup = 84EB1ECD1D2F51D3004FA5A1;
+			packageReferences = (
+				B4D65E23255F1DF5001D689C /* XCRemoteSwiftPackageReference "Just" */,
+				B4D65E28255F1F58001D689C /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				B4D65E2D255F1F65001D689C /* XCRemoteSwiftPackageReference "GzipSwift" */,
+				B4D65E32255F1FB0001D689C /* XCRemoteSwiftPackageReference "GRMustache.swift" */,
+			);
 			productRefGroup = 84EB1ED71D2F51D3004FA5A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -3566,7 +3586,11 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OpenInIINA/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -3593,14 +3617,19 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OpenInIINA/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.colliderli.iina.OpenInIINA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -3662,6 +3691,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -3713,6 +3743,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -3739,7 +3770,10 @@
 				);
 				INFOPLIST_FILE = iina/Info.plist;
 				INSTALL_PATH = /Applications;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/deps/lib",
 					"$(PROJECT_DIR)/deps/lib",
@@ -3781,7 +3815,10 @@
 				);
 				INFOPLIST_FILE = iina/Info.plist;
 				INSTALL_PATH = /Applications;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/deps/lib",
 					"$(PROJECT_DIR)/deps/lib",
@@ -3794,8 +3831,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.colliderli.iina;
 				PRODUCT_NAME = IINA;
 				SKIP_INSTALL = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "iina/iina-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -3839,9 +3877,10 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -3886,6 +3925,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4D65E23255F1DF5001D689C /* XCRemoteSwiftPackageReference "Just" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iina/Just.git";
+			requirement = {
+				branch = "swift-5";
+				kind = branch;
+			};
+		};
+		B4D65E28255F1F58001D689C /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.3;
+			};
+		};
+		B4D65E2D255F1F65001D689C /* XCRemoteSwiftPackageReference "GzipSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1024jp/GzipSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		B4D65E32255F1FB0001D689C /* XCRemoteSwiftPackageReference "GRMustache.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRMustache.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4D65E24255F1DF5001D689C /* Just */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4D65E23255F1DF5001D689C /* XCRemoteSwiftPackageReference "Just" */;
+			productName = Just;
+		};
+		B4D65E29255F1F58001D689C /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4D65E28255F1F58001D689C /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		B4D65E2E255F1F65001D689C /* Gzip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4D65E2D255F1F65001D689C /* XCRemoteSwiftPackageReference "GzipSwift" */;
+			productName = Gzip;
+		};
+		B4D65E33255F1FB0001D689C /* Mustache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4D65E32255F1FB0001D689C /* XCRemoteSwiftPackageReference "GRMustache.swift" */;
+			productName = Mustache;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84EB1ECE1D2F51D3004FA5A1 /* Project object */;
 }
